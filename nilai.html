@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilai-Nilai dalam Wayang</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background:
+                linear-gradient(rgba(25, 15, 5, 0.68), rgba(25, 15, 5, 0.68)),
+                url("awa.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #33251a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(79, 42, 12, 0.96), rgba(153, 101, 25, 0.96));
+            color: #fff4d0;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            border-bottom: 5px solid #d6b56d;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(26px, 4vw, 42px);
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #f5dfaa;
+        }
+
+        nav {
+            background: #3a2414;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            border-bottom: 2px solid #c69b48;
+        }
+
+        nav a {
+            color: #fff4d0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd76a;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .posts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 250, 235, 0.97);
+            padding: clamp(18px, 3vw, 30px);
+            border: 2px solid #b58a42;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .ornament {
+            text-align: center;
+            color: #8a5b1d;
+            font-size: 22px;
+            letter-spacing: 7px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: #684018;
+            font-family: Georgia, serif;
+            margin-bottom: 12px;
+        }
+
+        .value-card {
+            padding: 18px 0;
+            border-bottom: 1px solid #d9c49a;
+        }
+
+        .value-card:last-child {
+            border-bottom: none;
+        }
+
+        .value-card h3 {
+            color: #75451d;
+            margin-bottom: 8px;
+            font-size: 19px;
+        }
+
+        .value-card p {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+
+        .example {
+            background: #f2e5c8;
+            border-left: 4px solid #9b672a;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #75451d;
+            color: #fff4d0;
+            border: 1px solid #d6b56d;
+            padding: 11px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #9b672a;
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(42, 27, 16, 0.96);
+            color: #fff4d0;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .container {
+                width: 94%;
+                margin: 18px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nilai-Nilai dalam Wayang</h1>
+        <p>Mengenal pesan kehidupan dalam warisan budaya Indonesia</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="#daftar-nilai">Nilai Wayang</a>
+    </nav>
+
+    <main class="container">
+        <article class="card" id="daftar-nilai">
+            <div class="ornament" aria-hidden="true">✦ ❖ ✦ ❖ ✦</div>
+            <h2>22 Nilai yang Dapat Dipelajari dari Wayang</h2>
+            <p>
+                Cerita dan pertunjukan wayang memuat berbagai nilai yang dapat menjadi
+                bahan pembelajaran dalam kehidupan sehari-hari. Berikut nilai-nilai
+                beserta penjelasan dan contohnya.
+            </p>
+
+            <section class="value-card">
+                <h3>1. Nilai Moral</h3>
+                <p>Nilai moral berkaitan dengan perilaku baik dan buruk manusia. Cerita wayang mengajarkan pentingnya kejujuran, kesabaran, tanggung jawab, dan kesetiaan.</p>
+                <p class="example"><strong>Contoh:</strong> Yudistira dalam kisah Mahabharata dikenal menjunjung tinggi kejujuran dan berusaha bertindak sesuai kebenaran.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>2. Nilai Religius</h3>
+                <p>Nilai religius berkaitan dengan kepercayaan kepada Tuhan, kebaikan, dan hubungan manusia dengan Sang Pencipta. Nilai ini dapat ditemukan dalam cerita yang mengajarkan manusia untuk berbuat baik dan menghindari tindakan buruk.</p>
+                <p class="example"><strong>Contoh:</strong> Tokoh-tokoh dalam cerita wayang sering menghadapi pilihan antara mengikuti kebaikan atau melakukan tindakan yang merugikan orang lain.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>3. Nilai Sosial</h3>
+                <p>Nilai sosial mengajarkan pentingnya hidup berdampingan, saling membantu, bekerja sama, dan menghormati orang lain.</p>
+                <p class="example"><strong>Contoh:</strong> Para Pandawa bekerja sama ketika menghadapi berbagai tantangan dan berusaha saling membantu dalam perjuangan mereka.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>4. Nilai Budaya</h3>
+                <p>Nilai budaya berkaitan dengan tradisi, adat istiadat, bahasa, seni, dan identitas masyarakat Indonesia.</p>
+                <p class="example"><strong>Contoh:</strong> Pertunjukan wayang kulit menggunakan unsur budaya Jawa, seperti bahasa daerah, gamelan, tembang, dan tata cara pertunjukan tradisional.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>5. Nilai Pendidikan</h3>
+                <p>Wayang menjadi sarana pembelajaran mengenai kehidupan, karakter, dan akibat dari tindakan manusia.</p>
+                <p class="example"><strong>Contoh:</strong> Penonton dapat belajar bahwa kesombongan dan keserakahan dapat menimbulkan konflik, sedangkan kebijaksanaan membantu seseorang mengambil keputusan yang tepat.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>6. Nilai Kepahlawanan</h3>
+                <p>Nilai kepahlawanan mengajarkan keberanian, pengorbanan, keteguhan hati, dan kesediaan membela kebenaran.</p>
+                <p class="example"><strong>Contoh:</strong> Bima dikenal sebagai tokoh yang berani dan kuat dalam menghadapi berbagai tantangan.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>7. Nilai Kepemimpinan</h3>
+                <p>Nilai kepemimpinan berkaitan dengan kemampuan memimpin secara adil, bijaksana, dan bertanggung jawab.</p>
+                <p class="example"><strong>Contoh:</strong> Seorang pemimpin dalam cerita wayang diharapkan mengutamakan kepentingan bersama, bukan hanya kepentingan pribadi.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>8. Nilai Keadilan</h3>
+                <p>Nilai keadilan mengajarkan bahwa setiap orang harus diperlakukan secara adil dan bahwa tindakan yang merugikan orang lain perlu dipertanggungjawabkan.</p>
+                <p class="example"><strong>Contoh:</strong> Konflik antara Pandawa dan Kurawa dalam Mahabharata memperlihatkan persoalan hak, keadilan, keserakahan, dan perebutan kekuasaan.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>9. Nilai Kejujuran</h3>
+                <p>Nilai kejujuran mengajarkan manusia untuk berkata dan bertindak sesuai kebenaran serta tidak menipu orang lain.</p>
+                <p class="example"><strong>Contoh:</strong> Yudistira sering digambarkan sebagai tokoh yang menjunjung tinggi kejujuran, meskipun cerita tertentu memperlihatkan bahwa pilihan moral bisa sangat rumit.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>10. Nilai Tanggung Jawab</h3>
+                <p>Nilai tanggung jawab mengajarkan bahwa setiap orang harus menjalankan kewajibannya dan bersedia menerima akibat dari keputusan yang diambil.</p>
+                <p class="example"><strong>Contoh:</strong> Tokoh kesatria memiliki kewajiban untuk melindungi rakyat dan menjalankan tugasnya dengan baik.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>11. Nilai Kesetiaan</h3>
+                <p>Nilai kesetiaan berkaitan dengan komitmen terhadap keluarga, sahabat, janji, dan tugas yang telah diterima.</p>
+                <p class="example"><strong>Contoh:</strong> Tokoh-tokoh dalam Ramayana menunjukkan kesetiaan kepada keluarga dan orang-orang yang mereka perjuangkan, meskipun bentuk kesetiaan mereka dapat memiliki konsekuensi yang berbeda.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>12. Nilai Kerja Sama dan Persatuan</h3>
+                <p>Nilai ini mengajarkan bahwa pekerjaan yang sulit dapat diselesaikan melalui persatuan, komunikasi, dan pembagian tugas.</p>
+                <p class="example"><strong>Contoh:</strong> Para Pandawa dan sekutu mereka bekerja sama menghadapi tantangan dalam kisah Mahabharata.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>13. Nilai Kesederhanaan</h3>
+                <p>Nilai kesederhanaan mengajarkan agar manusia tidak sombong karena kekayaan, jabatan, atau kekuasaan.</p>
+                <p class="example"><strong>Contoh:</strong> Tokoh Semar sering digambarkan sederhana, dekat dengan rakyat, dan memberikan nasihat kepada para kesatria.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>14. Nilai Kebijaksanaan</h3>
+                <p>Nilai kebijaksanaan mengajarkan pentingnya berpikir sebelum bertindak, mempertimbangkan akibat keputusan, serta mencari jalan keluar yang baik.</p>
+                <p class="example"><strong>Contoh:</strong> Kresna sering berperan sebagai penasihat yang membantu para Pandawa mempertimbangkan strategi dan pilihan mereka.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>15. Nilai Toleransi</h3>
+                <p>Nilai toleransi mengajarkan pentingnya menghormati perbedaan pendapat, sifat, latar belakang, dan kebiasaan orang lain.</p>
+                <p class="example"><strong>Contoh penerapan:</strong> Dalam kehidupan sehari-hari, kita perlu menghargai teman yang memiliki pendapat berbeda dan menyelesaikan perselisihan melalui musyawarah.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>16. Nilai Pengendalian Diri</h3>
+                <p>Nilai ini mengajarkan manusia untuk mengendalikan emosi, hawa nafsu, keserakahan, dan keinginan untuk membalas dendam.</p>
+                <p class="example"><strong>Contoh:</strong> Kisah-kisah tentang konflik para kesatria menunjukkan bahwa keputusan yang dipengaruhi amarah dapat memperburuk keadaan.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>17. Nilai Kemanusiaan</h3>
+                <p>Nilai kemanusiaan menekankan pentingnya menghargai kehidupan, menjaga martabat manusia, dan menunjukkan kepedulian kepada sesama.</p>
+                <p class="example"><strong>Contoh:</strong> Tokoh yang membantu orang lain tanpa mengharapkan imbalan mencerminkan sikap peduli dan kemanusiaan.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>18. Nilai Musyawarah</h3>
+                <p>Nilai musyawarah mengajarkan bahwa masalah sebaiknya dibicarakan bersama untuk menemukan keputusan yang dapat dipertanggungjawabkan.</p>
+                <p class="example"><strong>Contoh:</strong> Para tokoh dalam cerita wayang terkadang mengadakan perundingan sebelum mengambil keputusan penting.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>19. Nilai Estetika atau Keindahan</h3>
+                <p>Nilai estetika berkaitan dengan keindahan seni yang terdapat dalam pertunjukan wayang, termasuk bentuk tokoh, ukiran, warna, musik, suara, dan gerakan.</p>
+                <p class="example"><strong>Contoh:</strong> Keindahan wayang kulit terlihat dari ukiran tokoh yang rumit, iringan gamelan, serta keterampilan dalang dalam menghidupkan cerita.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>20. Nilai Kreativitas</h3>
+                <p>Nilai kreativitas terlihat dari kemampuan seniman mengembangkan cerita, membuat karakter, menciptakan musik pengiring, dan menyesuaikan pertunjukan dengan perkembangan zaman.</p>
+                <p class="example"><strong>Contoh:</strong> Wayang modern dapat dipadukan dengan teknologi digital untuk memperkenalkan budaya tradisional kepada generasi muda.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>21. Nilai Ekonomi</h3>
+                <p>Nilai ekonomi berkaitan dengan mata pencaharian dan kegiatan ekonomi yang tumbuh di sekitar kesenian wayang.</p>
+                <p class="example"><strong>Contoh:</strong> Pertunjukan wayang memberikan kesempatan kerja bagi dalang, pemain gamelan, sinden, pengrajin wayang, dan pelaku usaha yang mendukung acara budaya.</p>
+            </section>
+
+            <section class="value-card">
+                <h3>22. Nilai Pelestarian Lingkungan</h3>
+                <p>Nilai ini dapat ditemukan dalam cerita atau pertunjukan yang mengajarkan pentingnya menjaga keseimbangan kehidupan dan alam.</p>
+                <p class="example"><strong>Contoh penerapan:</strong> Masyarakat dapat mengambil pelajaran untuk menggunakan sumber daya secara bijaksana dan menjaga lingkungan agar tetap lestari.</p>
+            </section>
+
+            <div class="ornament" aria-hidden="true">꧁ ❖ ꧂</div>
+            <button class="btn" onclick="window.location.href='index.html'">
+                🏠 Kembali ke Beranda
+            </button>
+        </article>
+    </main>
+
+    <footer>
+        <p>Melestarikan Wayang, Menjaga Warisan Budaya Indonesia</p>
+    </footer>
+</body>
+</html>

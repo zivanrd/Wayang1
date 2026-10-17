@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        linear-gradient(
+            rgba(25, 15, 5, 0.65),
+            rgba(25, 15, 5, 0.65)
+        ),
+        url("wayang.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #33251a;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   OPENING
+========================================= */
+
+#opening {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(30, 18, 8, 0.80),
+            rgba(60, 35, 10, 0.85)
+        ),
+        url("wayang.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+}
+
+#opening.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* =========================================
+   OPENING CONTENT
+========================================= */
+
+.opening-content {
+    width: min(850px, 85%);
+    text-align: center;
+    position: relative;
+    z-index: 5;
+
+    background: rgba(255, 248, 230, 0.10);
+    padding: 35px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(5px);
+}
+
+.opening-content h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 6vw, 75px);
+
+    font-weight: 400;
+    letter-spacing: 3px;
+
+    color: #f5d58a;
+
+    margin: 25px 0;
+
+    text-shadow:
+        0 3px 10px rgba(0,0,0,0.8);
+}
+
+
+/* =========================================
+   ORNAMEN
+========================================= */
+
+.ornament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    color: #e9b949;
+    font-size: 22px;
+}
+
+.ornament div {
+    width: 100px;
+    height: 2px;
+
+    background: #e9b949;
+}
+
+
+/* =========================================
+   GARIS
+========================================= */
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    color: #e9b949;
+
+    margin-bottom: 35px;
+}
+
+.line::before,
+.line::after {
+    content: "";
+
+    width: 35%;
+    height: 2px;
+
+    background: #e9b949;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.loading-text {
+    color: #fff0c2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+
+    animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+.progress-bar {
+    width: 100%;
+    height: 58px;
+
+    border-radius: 50px;
+
+    border: 3px solid #d6a63a;
+
+    background: rgba(50, 30, 10, 0.7);
+
+    padding: 4px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.5);
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+
+    border-radius: 40px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8b5a16,
+            #d9a62e,
+            #f5d77a
+        );
+
+    transition: width 0.08s linear;
+
+    position: relative;
+}
+
+#progress::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.4),
+            transparent
+        );
+
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+/* =========================================
+   PERSENTASE
+========================================= */
+
+#percent {
+    position: absolute;
+
+    right: 22px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #fff4c7;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-shadow:
+        0 1px 4px rgba(0,0,0,0.7);
+
+    z-index: 5;
+}
+
+
+/* =========================================
+   DEKORASI WAYANG
+========================================= */
+
+.wayang-icon {
+    position: absolute;
+
+    color: #e7b94c;
+
+    opacity: 0.35;
+
+    font-size: 55px;
+
+    animation:
+        wayangFloat 6s
+        infinite ease-in-out;
+}
+
+.wayang1 {
+    top: 8%;
+    left: 8%;
+}
+
+.wayang2 {
+    top: 15%;
+    right: 10%;
+    font-size: 70px;
+}
+
+.wayang3 {
+    bottom: 10%;
+    left: 7%;
+    font-size: 80px;
+}
+
+.wayang4 {
+    bottom: 15%;
+    right: 8%;
+}
+
+.wayang5 {
+    top: 45%;
+    left: 3%;
+}
+
+@keyframes wayangFloat {
+    0%, 100% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(-20px)
+            rotate(5deg);
+    }
+}
+
+
+/* =========================================
+   LINGKARAN
+========================================= */
+
+.circle {
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    border:
+        2px dashed
+        rgba(232, 190, 88, 0.35);
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79, 42, 12, 0.95),
+            rgba(153, 101, 25, 0.95)
+        );
+
+    color: #fff4d0;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 15px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 34px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   NAVIGASI
+========================================= */
+
+nav {
+    background: #2d1b0d;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 14px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.4);
+}
+
+nav a {
+    color: #f5d98a;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: white;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   POSTS
+========================================= */
+
+.posts {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+    background:
+        rgba(255, 248, 230, 0.96);
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.35);
+
+    border-top:
+        5px solid #b47a1c;
+}
+
+.card h2 {
+    color: #704313;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+.card h3 {
+    color: #704313;
+}
+
+.card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin: 10px 0;
+}
+
+.card p {
+    text-align: justify;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.card button {
+    background: #704313;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.2s;
+}
+
+.card button:hover {
+    background: #b47a1c;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+aside {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+aside .card h3 {
+    color: #704313;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+
+    background: #2d1b0d;
+
+    color: #f5d98a;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media(max-width:800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .opening-content {
+        width: 88%;
+        padding: 25px;
+    }
+
+    .opening-content h1 {
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+
+    .ornament div {
+        width: 40px;
+    }
+
+    .loading-text {
+        font-size: 20px;
+    }
+
+    .progress-bar {
+        height: 45px;
+    }
+
+    #percent {
+        font-size: 17px;
+        right: 15px;
+    }
+
+    .wayang-icon {
+        font-size: 35px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+.other-blog-button {
+    display: inline-block;
+    background: #20a84b;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.other-blog-button:hover {
+    background: #168238;
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px #20a84b;
+}

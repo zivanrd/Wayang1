@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Wayang</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background:
+                linear-gradient(rgba(25, 15, 5, 0.65), rgba(25, 15, 5, 0.65)),
+                url("awa.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #33251a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(79, 42, 12, 0.95), rgba(153, 101, 25, 0.95));
+            color: #fff4d0;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            border-bottom: 5px solid #d6b56d;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(28px, 4vw, 42px);
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #f5dfaa;
+        }
+
+        nav {
+            background: #3a2414;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            border-bottom: 2px solid #c69b48;
+        }
+
+        nav a {
+            color: #fff4d0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd76a;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: rgba(255, 250, 235, 0.97);
+            padding: clamp(20px, 4vw, 36px);
+            border: 2px solid #b58a42;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .ornament {
+            text-align: center;
+            color: #8a5b1d;
+            font-size: 24px;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: #684018;
+            margin: 10px 0 16px;
+            font-family: Georgia, serif;
+        }
+
+        .card p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #c8a96a;
+            margin: 24px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #75451d;
+            color: #fff4d0;
+            border: 1px solid #d6b56d;
+            padding: 11px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .btn:hover {
+            background: #9b672a;
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(42, 27, 16, 0.95);
+            color: #fff4d0;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .container {
+                width: 94%;
+                margin: 18px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ꦱꦼꦗꦫꦃ ꦮꦪꦁ</h1>
+        <p>Mengenal Sejarah dan Warisan Budaya Wayang Indonesia</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="#sejarah">Sejarah Wayang</a>
+    </nav>
+
+    <main class="container">
+        <article class="card" id="sejarah">
+            <div class="ornament" aria-hidden="true">✦ ❖ ✦ ❖ ✦</div>
+            <h2>Sejarah Wayang</h2>
+
+            <p>
+                Wayang merupakan salah satu bentuk kesenian tradisional yang telah berkembang
+                di Indonesia sejak berabad-abad lalu. Kesenian ini mengalami perkembangan
+                seiring dengan perubahan zaman dan masuknya berbagai pengaruh budaya.
+            </p>
+
+            <p>
+                Dalam perkembangannya, cerita wayang banyak dipengaruhi oleh kisah-kisah
+                dari India, seperti Ramayana dan Mahabharata. Cerita tersebut kemudian
+                diadaptasi dengan budaya, bahasa, serta nilai-nilai kehidupan masyarakat Indonesia.
+            </p>
+
+            <p>
+                Wayang juga digunakan sebagai media penyebaran ajaran agama, pendidikan,
+                dan nasihat kepada masyarakat. Hingga saat ini, wayang tetap dilestarikan
+                melalui pertunjukan langsung, festival budaya, pendidikan, dan media digital.
+            </p>
+
+            <p>
+                Pada tahun 2003, UNESCO menetapkan wayang sebagai Masterpiece of the Oral
+                and Intangible Heritage of Humanity. Pengakuan tersebut menegaskan pentingnya
+                wayang sebagai warisan budaya yang memiliki nilai bagi Indonesia dan dunia.
+            </p>
+
+            <hr>
+
+            <div class="ornament" aria-hidden="true">꧁ ❖ ꧂</div>
+
+            <button class="btn" onclick="window.location.href='index.html'">
+                🏠 Kembali ke Beranda
+            </button>
+        </article>
+    </main>
+
+    <footer>
+        <p>Melestarikan Wayang, Menjaga Warisan Budaya Indonesia</p>
+    </footer>
+</body>
+</html>

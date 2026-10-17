@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis-Jenis Wayang</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background:
+                linear-gradient(rgba(25, 15, 5, 0.68), rgba(25, 15, 5, 0.68)),
+                url("awa.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #33251a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(79, 42, 12, 0.96), rgba(153, 101, 25, 0.96));
+            color: #fff4d0;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            border-bottom: 5px solid #d6b56d;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(26px, 4vw, 42px);
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #f5dfaa;
+        }
+
+        nav {
+            background: #3a2414;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            border-bottom: 2px solid #c69b48;
+        }
+
+        nav a {
+            color: #fff4d0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd76a;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: rgba(255, 250, 235, 0.97);
+            padding: clamp(18px, 3vw, 30px);
+            border: 2px solid #b58a42;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .ornament {
+            text-align: center;
+            color: #8a5b1d;
+            font-size: 22px;
+            letter-spacing: 7px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: #684018;
+            font-family: Georgia, serif;
+            margin-bottom: 12px;
+        }
+
+        .wayang-item {
+            padding: 20px 0;
+            border-bottom: 1px solid #d9c49a;
+        }
+
+        .wayang-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .wayang-item h3 {
+            color: #75451d;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .wayang-item p {
+            text-align: justify;
+        }
+
+        .number {
+            display: inline-block;
+            background: #75451d;
+            color: #fff4d0;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #75451d;
+            color: #fff4d0;
+            border: 1px solid #d6b56d;
+            padding: 11px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #9b672a;
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(42, 27, 16, 0.96);
+            color: #fff4d0;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .container {
+                width: 94%;
+                margin: 18px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jenis-Jenis Wayang</h1>
+        <p>Mengenal ragam kesenian wayang Nusantara</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="#jenis-wayang">Jenis Wayang</a>
+    </nav>
+
+    <main class="container">
+        <article class="card" id="jenis-wayang">
+            <div class="ornament" aria-hidden="true">✦ ❖ ✦ ❖ ✦</div>
+            <h2>Berbagai Jenis Wayang di Indonesia</h2>
+            <p>
+                Wayang memiliki berbagai jenis yang berbeda berdasarkan bahan, bentuk,
+                dan cara pertunjukannya. Beberapa jenis wayang yang terkenal antara lain:
+            </p>
+
+            <section class="wayang-item">
+                <h3><span class="number">1</span>Wayang Kulit</h3>
+                <p>Wayang kulit dibuat dari kulit hewan yang diolah dan dibentuk menjadi tokoh-tokoh tertentu. Pertunjukannya menggunakan layar putih dan cahaya sehingga menghasilkan bayangan. Wayang kulit sangat dikenal di Jawa dan Bali.</p>
+            </section>
+
+            <section class="wayang-item">
+                <h3><span class="number">2</span>Wayang Golek</h3>
+                <p>Wayang golek merupakan wayang berbentuk boneka tiga dimensi yang umumnya terbuat dari kayu. Jenis wayang ini berkembang pesat di Jawa Barat dan biasanya menggunakan bahasa Sunda dalam pertunjukannya.</p>
+            </section>
+
+            <section class="wayang-item">
+                <h3><span class="number">3</span>Wayang Orang</h3>
+                <p>Wayang orang adalah pertunjukan wayang yang dimainkan oleh manusia. Para pemain mengenakan kostum dan riasan sesuai tokoh yang diperankan serta menyampaikan cerita melalui gerakan, dialog, dan tarian.</p>
+            </section>
+
+            <section class="wayang-item">
+                <h3><span class="number">4</span>Wayang Klitik</h3>
+                <p>Wayang klitik dibuat dari kayu pipih dan memiliki bentuk yang menyerupai wayang kulit. Jenis wayang ini digunakan untuk menceritakan kisah-kisah tertentu, termasuk cerita Panji.</p>
+            </section>
+
+            <section class="wayang-item">
+                <h3><span class="number">5</span>Wayang Beber</h3>
+                <p>Wayang beber merupakan seni pertunjukan yang menggunakan lembaran gambar berisi rangkaian cerita. Dalang menjelaskan kisah dengan membuka lembaran gambar secara bertahap.</p>
+            </section>
+
+            <section class="wayang-item">
+                <h3><span class="number">6</span>Wayang Sasak</h3>
+                <p>Wayang Sasak berkembang di Pulau Lombok, Nusa Tenggara Barat. Pertunjukannya memiliki ciri khas tersendiri dan banyak mengambil cerita dari kisah Amir Hamzah.</p>
+            </section>
+
+            <div class="ornament" aria-hidden="true">꧁ ❖ ꧂</div>
+            <button class="btn" onclick="window.location.href='index.html'">
+                🏠 Kembali ke Beranda
+            </button>
+        </article>
+    </main>
+
+    <footer>
+        <p>Melestarikan Wayang, Menjaga Warisan Budaya Indonesia</p>
+    </footer>
+</body>
+</html>
